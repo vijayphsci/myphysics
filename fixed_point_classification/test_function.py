@@ -7,7 +7,7 @@ def function2(x1,x2):
 
 
 box_size=50
-search_time=20
+search_time=5
 detail=True
 decimal=5
 h=0.001
