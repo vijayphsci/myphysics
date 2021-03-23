@@ -17,5 +17,6 @@ def classify_fixed_point_automatatic(function1,function2,box_size=50,search_time
         ans=ls.classify(trace,determinant,A,detail,decimal,set_title=name)
         print(name+' : '+ans)
         if detail:
-            print('system matrix =')
+            print('system matrix at '+'('+str(x_zero)+' , '+str(y_zero)+')'+'=')
             print(A)
+
