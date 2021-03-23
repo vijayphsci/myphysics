@@ -16,5 +16,5 @@ max_iteration=500
 
 
 
-cfp.classify_fixed_point_automatatic(function1=lambda x1,x2:function1(x1,x2),function2=lambda x1,x2:function2(x1,x2),box_size=box_size,search_time=search_time,detail=detail,decimal=decimal,h=h,epsilon=epsilon,max_iteration=max_iteration)
+cfp.classify_fixed_point_automatic(function1=lambda x1,x2:function1(x1,x2),function2=lambda x1,x2:function2(x1,x2),box_size=box_size,search_time=search_time,detail=detail,decimal=decimal,h=h,epsilon=epsilon,max_iteration=max_iteration)
 
