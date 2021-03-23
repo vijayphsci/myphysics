@@ -136,7 +136,7 @@ def classify(trace,determinant,matrix=None,detail=True,decimal=5,set_title='fixe
             plt.title(set_title)
             plt.show()
         return 'stable line of fixed points(non islolated fixed points)'
-    elif d<0 and t>0:
+    elif d<0:
         if detail:
             img = mpimg.imread('saddle1.PNG')
             plt.figure()
@@ -145,17 +145,9 @@ def classify(trace,determinant,matrix=None,detail=True,decimal=5,set_title='fixe
             fig.axes.get_yaxis().set_visible(False)
             plt.title(set_title)
             plt.show()
-        return 'saddle kind1'
-    elif d<0 and t<0:
-        if detail:
-            img = mpimg.imread('saddle2.PNG')
-            plt.figure()
-            fig = plt.imshow(img)
-            fig.axes.get_xaxis().set_visible(False)
-            fig.axes.get_yaxis().set_visible(False)
-            plt.title(set_title)
-            plt.show()
-        return 'saddle kind2'
+        return 'saddle'
+    else:
+        return 'cannot classify'
     
 def newton_rapshon_2d(x1_start,x2_start,function1,function2,epsilon=1e-6,h=0.001,max_iteration=1000):
     temp1,temp2=2*epsilon,2*epsilon
